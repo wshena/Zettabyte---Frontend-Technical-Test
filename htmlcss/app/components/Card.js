@@ -10,7 +10,7 @@ const Card = ({title, price, discount, pages, projects, storage}) => {
   }
 
   return (
-    <div onClick={handleSelected} className={`cursor-pointer w-[350px] bg-white shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] ${isSelected ? 'border-2 border-black' : ''}`}>
+    <div onClick={handleSelected} className={`hover:scale-125 cursor-pointer w-[350px] bg-white shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] ${isSelected ? 'border-2 border-black' : ''}`}>
       <div className='w-[100%] p-[1rem] bg-gray-900 text-white flex items-center justify-between'>
         <h1 className='uppercase text-[1.2rem]'>{title}</h1>
         <p className='text-[.8rem]'>{discount}</p>
